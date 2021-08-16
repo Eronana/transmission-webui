@@ -1,4 +1,6 @@
 ## transmission-webui
+[![Docker Repository on Quay](https://quay.io/repository/erona/transmission-webui/status "Docker Repository on Quay")](https://quay.io/repository/erona/transmission-webui)
+
 This project contains 4 transmission web clients:
 - [combustion](https://github.com/Secretmapper/combustion)
 - [transmission-web-control](https://github.com/ronggang/transmission-web-control)
