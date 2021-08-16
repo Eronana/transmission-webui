@@ -1,0 +1,14 @@
+server {
+  listen $PORT;
+
+  location / {
+    root /usr/share/transmission-webui;
+    index index.html index.htm;
+    autoindex on;
+  }
+
+  location  ~ /rpc$ {
+    rewrite ^.*$ /transmission/rpc break;
+    proxy_pass $TRANSMISSION_URL;
+  }
+}
