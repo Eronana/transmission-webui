@@ -1,5 +1,6 @@
 server {
   listen $PORT;
+  client_max_body_size 100m;
 
   location / {
     root /usr/share/transmission-webui;
